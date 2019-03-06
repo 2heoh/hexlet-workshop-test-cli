@@ -1,12 +1,12 @@
 {
-    "name": "buonzz/composer-library-template",
-    "description": "Boilerplate package for creating other packages.",
-    "keywords": ["template", "composer", "package"],
+    "name": "2heoh/cli",
+    "description": "sample domain for workshop",
+    "keywords": ["unit testing", "tdd"],
     "license": "DBAD",
     "authors": [
         {
-            "name": "Darwin Biler",
-            "email": "buonzz@gmail.com"
+            "name": "Sergey Lobin",
+            "email": "sergey.lobin@gmail.com"
         }
     ],
     "type": "project",
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Buonzz\\Template\\": "src/"
+            "HeoH\\CLI\\": "src/"
         }
     }
 }

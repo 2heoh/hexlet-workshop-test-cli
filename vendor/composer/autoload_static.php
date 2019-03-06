@@ -24,14 +24,14 @@ class ComposerStaticInitaa0707f21fb846efd51504df951f96d5
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
+        'H' => 
+        array (
+            'HeoH\\CLI\\' => 9,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
-        ),
-        'B' => 
-        array (
-            'Buonzz\\Template\\' => 16,
         ),
     );
 
@@ -50,6 +50,10 @@ class ComposerStaticInitaa0707f21fb846efd51504df951f96d5
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'HeoH\\CLI\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -57,10 +61,6 @@ class ComposerStaticInitaa0707f21fb846efd51504df951f96d5
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
-        ),
-        'Buonzz\\Template\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
