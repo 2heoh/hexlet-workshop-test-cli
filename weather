@@ -4,4 +4,4 @@
 require __DIR__.'/src/Weather.php';
 
 $weather = new Weather\Weather;
-echo $weather->getByCity($argv[1]);
+echo $weather->getByCity($argv[1])."\n";

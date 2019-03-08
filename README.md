@@ -6,5 +6,5 @@
 
 eg:
 ```
-weather berlin
+./weather berlin
 ```
