@@ -4,15 +4,23 @@ use PHPUnit\Framework\TestCase;
 
 class WeatherTest extends TestCase
 {
+
     public function testExistingCity()
     {
-        $weather = system("./weather Novosibirsk 2>&1");
-        $this->assertRegExp("/^-?\d+$/", $weather);
+        $weather = new Weather;
+
+        $temperature = $weather->getByCity("Paris");
+
+        $this->assertRegExp("/\d+/", "$temperature");
     }
+
 
     public function testNonExistentCity()
     {
-        $weather = system("./weather 12323 2>&1");
-        $this->assertEquals("Error", $weather);
+        $weather = new Weather;
+
+        $temperature = $weather->getByCity("746546");
+
+        $this->assertEquals("Error", $temperature);
     }
 }

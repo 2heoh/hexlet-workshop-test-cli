@@ -19,14 +19,11 @@ class ComposerStaticInitaa0707f21fb846efd51504df951f96d5
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
+            'Weather\\' => 8,
         ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
-        ),
-        'H' => 
-        array (
-            'HeoH\\CLI\\' => 9,
         ),
         'D' => 
         array (
@@ -46,13 +43,13 @@ class ComposerStaticInitaa0707f21fb846efd51504df951f96d5
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
+        'Weather\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
-        ),
-        'HeoH\\CLI\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
