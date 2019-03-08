@@ -1,4 +1,5 @@
-<?php
+<?php namespace HeoH\CLI;
+
 use PHPUnit\Framework\TestCase;
 
 class GreetingTest extends TestCase
@@ -6,7 +7,7 @@ class GreetingTest extends TestCase
 
     public function testHello()
     {
-        $cli = new HeoH\CLI\Greeting;
+        $cli = new Greeting;
 
         $result = $cli->hello("world");
 

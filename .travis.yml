@@ -5,4 +5,7 @@ php:
 jobs:
   include:
     - stage: test
-      script: ./test.sh
+      before_script:
+        - ./vendor/squizlabs/php_codesniffer/bin/phpcs --standard=PSR2 src/* test/*
+      script:
+        - ./test.sh
