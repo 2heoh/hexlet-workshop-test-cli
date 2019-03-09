@@ -4,4 +4,8 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 $weather = new Weather\Weather;
-echo $weather->getByCity($argv[1])."\n";
+try {
+    echo $weather->getTemperatureInCity($argv[1]) . "\n";
+} catch (Exception $e) {
+    fwrite(STDERR, $e->getMessage()."\n");
+}
