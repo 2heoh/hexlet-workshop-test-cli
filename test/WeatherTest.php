@@ -7,7 +7,7 @@ class WeatherTest extends TestCase
 
     public function testExistingCity()
     {
-        $weather = new Weather;
+        $weather = new Weather();
 
         $temperature = $weather->getByCity("Paris");
 
@@ -17,7 +17,7 @@ class WeatherTest extends TestCase
 
     public function testNonExistentCity()
     {
-        $weather = new Weather;
+        $weather = new Weather();
 
         $temperature = $weather->getByCity("746546");
 

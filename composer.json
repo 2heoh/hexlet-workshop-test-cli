@@ -9,6 +9,12 @@
             "email": "sergey.lobin@gmail.com"
         }
     ],
+    "scripts": {
+        "phpcs": "phpcs",
+        "phpcbf": "phpcbf",
+        "phpunit": "phpunit",
+        "test": "phpunit test"
+    },
     "type": "project",
     "require": {
 		"php": ">=7.1"
