@@ -1,11 +1,13 @@
 <?php namespace Weather;
 
-use Exception;
 use PHPUnit\Framework\TestCase;
 
 class WeatherTest extends TestCase
 {
 
+    /**
+     * @throws CityNotFoundException
+     */
     public function testExistingCity()
     {
         $weather = new Weather();
@@ -16,11 +18,15 @@ class WeatherTest extends TestCase
     }
 
 
+    /**
+     * @throws CityNotFoundException
+     */
     public function testNonExistentCity()
     {
         $weather = new Weather();
 
-        $this->expectException(Exception::class);
+        $this->expectException(CityNotFoundException::class);
+
         $weather->getByCity('746546');
     }
 }
