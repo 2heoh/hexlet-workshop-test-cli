@@ -7,7 +7,8 @@ class WeatherE2ETest extends TestCase
 
     public function testExistingCity()
     {
-        $weather = system("./bin/weather Paris 2>&1");
-        $this->assertRegExp("/^-?\d+$/", $weather);
+        $temperature = system('./bin/weather berlin 2>&1');
+
+        $this->assertRegExp('/^-?\d+$/', $temperature);
     }
 }

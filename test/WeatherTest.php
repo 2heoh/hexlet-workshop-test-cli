@@ -1,5 +1,6 @@
 <?php namespace Weather;
 
+use Exception;
 use PHPUnit\Framework\TestCase;
 
 class WeatherTest extends TestCase
@@ -9,9 +10,9 @@ class WeatherTest extends TestCase
     {
         $weather = new Weather();
 
-        $temperature = $weather->getByCity("Paris");
+        $temperature = $weather->getByCity('Paris');
 
-        $this->assertRegExp("/\d+/", "$temperature");
+        $this->assertRegExp('/\d+/', $temperature);
     }
 
 
@@ -19,8 +20,7 @@ class WeatherTest extends TestCase
     {
         $weather = new Weather();
 
-        $temperature = $weather->getByCity("746546");
-
-        $this->assertEquals("Error", $temperature);
+        $this->expectException(Exception::class);
+        $weather->getByCity('746546');
     }
 }
